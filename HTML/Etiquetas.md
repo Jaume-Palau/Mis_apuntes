@@ -1,14 +1,9 @@
-# Este es un documento para tener una platilla de lo básico.
+# Documento con clases de etiquetas.
 
-## Webs de plantillas:
-- https://www.w3schools.com/html/default.asp
-- https://htmlboilerplates.com/
-- https://github.com/h5bp/html5-boilerplate#quick-start
-
-## Etiquetas básicas:
+## Etiquetas básicas comúnes:
 
 - h1 a h6 → títulos
-- p → párrafos
+- p → párrafos solo texto
 - a → enlaces
 - img → imágenes
 - ul, ol, li → listas
@@ -23,6 +18,8 @@
 
 ## Etiquetas semánticas de estructura:
 
+Definen el significado y la estructura lógica del contenido de una web
+
 - article → Define partes con suficiente imoprtancia como para considerarse una   
 entidad destacable con informafion a su alrededor
 
@@ -36,7 +33,7 @@ entidad destacable con informafion a su alrededor
 
 - main → Para agrupar el conjunto de contenido de nuestra pagina
 
-- aside → Lo opuesto a main, para agrupar lo mas irrelevante
+- aside → Lo opuesto a main, para agrupar lo mas irrelevante (izquierda,derecha)
 
 
 ## Etiquetas semámticas de texto:
@@ -51,37 +48,23 @@ Dan relevancia a partes de texto, sirven para el SEO y Accesibilidad. Normalment
 
 - address → Indicar la forma de contacto o dirección 
 
-## Atajos útiles de Emmet (HTML)
+## Etiquetas de agrupación:
 
-### Plantilla base
-!
-→ Genera la estructura HTML5 completa
+No aportan ningun valor semántico. Identifican una sección especifica, dan estilo visual (CSS) y funcionalidad (Javascript)
 
-### Clases e IDs
-- div.container
-- #main
+- div → Contenedor genérico. De las estiquetas más conocidas, de las que menos sirven y más se abusa. (bloque)
 
-<div class="container"></div>
-<div id="main"></div>
+- span → Igual que div. (línea)
 
-### Anidar elementos
-header>nav>ul>li
+- blockquote → Se utiliza para indicar que el texto pertenece a otro sitio externo del cual se indica la fuente  
+con un atributo específico 'cite' de tipo url para indicar el origen de la cita
 
-### Elementos hermanos
-header+main+footer
+- hr → Separa bloques de contenido. Inserta una línea (aporta semámntica)
 
-### Multiplicar elementos
-li*5
+- ul / ol → Organizan informacion en forma de lista. Cada elemento hijo →  li
 
-### Texto dentro de la etiqueta
-p{Hola mundo}
+- dl → Listar elementos para luego definirlos. Etiquetas hijas → dt / dd
 
-### Atributos
-- a[href="#"]
-- img[src="img.jpg" alt="imagen"]
+- figure → Agrupacción para imágenes/vídeos
 
-### Estructura típica de página
-header>nav+main+footer
-
-### Listas con clase
-ul>li.item*3
+- figcaption → Añade significado semántico a la imágen
