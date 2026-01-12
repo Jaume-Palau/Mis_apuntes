@@ -13,6 +13,7 @@
 
 | Comando                       | Descripción                                    | Ejemplo                                                                       |
 | ----------------------------- | ---------------------------------------------- | ----------------------------------------------------------------------------- |
+| DESC| Muestra la descripcción de la tabla | DESC tabla;|
 | SHOW DATABASES;               | Muestra todas las bases de datos               | SHOW DATABASES;                                                               |
 | USE nombre;                   | Selecciona una base de datos                   | USE sakila;                                                                   |
 | SHOW TABLES;                  | Lista todas las tablas de la base seleccionada | SHOW TABLES;                                                                  |
@@ -37,3 +38,7 @@
 | ROLLUP                        | Genera subtotales y total general              | SELECT col1, col2, SUM(...) FROM tabla GROUP BY col1, col2 WITH ROLLUP;       |
 | CASE                          | Condición dentro de un SELECT                  | CASE WHEN cond THEN val ELSE otro END                                         |
 | GROUP_CONCAT(columna)         | Une valores de una columna en un solo texto    | GROUP_CONCAT(columna SEPARATOR ', ');                                         |
+| UNION     |   Combina el resultado de los SELECT y devuelve un único resultado eliminando duplicados  | SELECT columnas FROM tabla1 UNION SELECT columnas FROM tabla2;    |
+| UNION ALL | Combina el resultado de los SELECT y devuelve un único resultado sin elñiminar duplicados | SELECT columnas FROM tabla1 UNION ALL SELECT columnas FROM tabla2; |
+| INTERSECT |   Combina el resultado de los SELECT y devuelve un único resultado con las filas existentes en ambas tablas | SELECT columnas FROM tabla1 INTERSECT ALL SELECT columnas FROM tabla2;|
+| EXCEPT | Combina los resultados de los SELECT y devuelve un único resultado con las filas existentes en la primera tabla que no estén presentes en la segunda | SELECT columnas FROM tabla1 EXCEPT SELECT columnas FROM tabla2; |
