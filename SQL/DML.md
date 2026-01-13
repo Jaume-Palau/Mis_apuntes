@@ -34,3 +34,14 @@
 | `CHANGE COLUMN` | Renombra una columna y permite redefinir su tipo (MySQL).                             | `ALTER TABLE alumno CHANGE COLUMN nombre nombre_completo VARCHAR(100);` |
 | `RENAME TABLE`  | Renombra una tabla.                                                                   | `RENAME TABLE alumno TO alumnos;`                                       |
 | `DROP TABLE`    | Elimina una tabla entera.                                                             | `DROP TABLE alumnos;`                                                   |
+
+## Constraints (Restricciones)
+
+| Comando       | Descripción                                                                     | Ejemplo                                                                                  |
+| ------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `NOT NULL`    | Obliga a que la columna no pueda tener `NULL`.                                  | `CREATE TABLE alumno (nombre VARCHAR(50) NOT NULL);`                                     |
+| `UNIQUE`      | Evita valores duplicados en la columna (o combinación de columnas).             | `CREATE TABLE alumno (email VARCHAR(100) UNIQUE);`                                       |
+| `PRIMARY KEY` | Identifica de forma única cada fila (equivale a `UNIQUE` + `NOT NULL`).         | `CREATE TABLE alumno (id INT PRIMARY KEY);`                                              |
+| `FOREIGN KEY` | Obliga a que un valor exista en la tabla referenciada (integridad referencial). | `CREATE TABLE matricula (alumno_id INT, FOREIGN KEY (alumno_id) REFERENCES alumno(id));` |
+| `CHECK`       | Impone una condición que deben cumplir los valores.                             | `CREATE TABLE alumno (edad INT CHECK (edad >= 0));`                                      |
+| `DEFAULT`     | Asigna un valor por defecto si no se indica uno.                                | `CREATE TABLE alumno (activo TINYINT DEFAULT 1);`                                        |
