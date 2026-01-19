@@ -35,3 +35,34 @@ https://www.w3schools.com/sql/sql_ref_mysql.asp
 | `ROUND()`           | Redondea un número                             | `SELECT ROUND(4.567, 2);`    | `4.57`     |
 | `SIGN()`            | Devuelve el signo del número                   | `SELECT SIGN(-10);`          | `-1`       |
 | `TRUNCATE()`        | Trunca un número a N decimales (sin redondear) | `SELECT TRUNCATE(4.567, 2);` | `4.56`     |
+
+
+## Creacion de Funciones
+## Funciones definidas por el usuario (User Defined Functions)
+
+| Elemento               | Descripción                                                       | Ejemplo                                                  |
+| ---------------------- | ----------------------------------------------------------------- | -------------------------------------------------------- |
+| `CREATE FUNCTION`      | Crea una función definida por el usuario.                         | `CREATE FUNCTION doble(x INT) RETURNS INT RETURN x * 2;` |
+| `RETURNS tipo`         | Define el tipo de dato que devuelve la función (**obligatorio**). | `RETURNS DECIMAL(10,2)`                                  |
+| `RETURN`               | Devuelve el valor calculado por la función (**obligatorio**).     | `RETURN precio * 1.21;`                                  |
+| `IN`                   | Parámetro de entrada (por defecto, no se escribe `IN`).           | `CREATE FUNCTION f(x INT) ...`                           |
+| `DETERMINISTIC`        | Siempre devuelve el mismo resultado con los mismos parámetros.    | `DETERMINISTIC`                                          |
+| `NOT DETERMINISTIC`    | El resultado puede variar (por ejemplo, usa `RAND()` o fechas).   | `NOT DETERMINISTIC`                                      |
+| `NO SQL`               | La función no contiene sentencias SQL.                            | `NO SQL`                                                 |
+| `READS SQL DATA`       | La función solo lee datos (`SELECT`).                             | `READS SQL DATA`                                         |
+| `CONTAINS SQL`         | La función contiene SQL pero no modifica datos.                   | `CONTAINS SQL`                                           |
+| `SQL SECURITY DEFINER` | Se ejecuta con los permisos del creador.                          | `SQL SECURITY DEFINER`                                   |
+| `SQL SECURITY INVOKER` | Se ejecuta con los permisos del usuario que la llama.             | `SQL SECURITY INVOKER`                                   |
+| `DROP FUNCTION`        | Elimina una función.                                              | `DROP FUNCTION doble;`                                   |
+
+# Plantilla general:
+`CREATE` `FUNCTION` nombre_funcion (parametro tipo)  
+`RETURNS` tipo_retorno  
+[`DETERMINISTIC` | NOT `DETERMINISTIC`]  
+[`NO SQL` |` READS SQL DATA` | `CONTAINS SQL`]  
+[`SQL` SECURITY DEFINER | `SQL` SECURITY INVOKER]  
+`BEGIN`  
+    -- declaraciones  
+    -- lógica  
+    `RETURN` valor;  
+`END`;

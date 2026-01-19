@@ -1,0 +1,21 @@
+
+## Condicionales en SQL (procedimientos / funciones)
+
+| Estructura               | Descripción                                  | Ejemplo                                                                          |
+| ------------------------ | -------------------------------------------- | -------------------------------------------------------------------------------- |
+| `IF ... THEN`            | Ejecuta código si la condición es verdadera. | `IF total > 10 THEN SET msg = 'alto'; END IF;`                                   |
+| `IF ... ELSE`            | Ejecuta una cosa u otra según la condición.  | `IF total > 10 THEN SET msg = 'alto'; ELSE SET msg = 'bajo'; END IF;`            |
+| `IF ... ELSEIF ... ELSE` | Permite múltiples condiciones.               | `IF n > 10 THEN SET r='A'; ELSEIF n > 5 THEN SET r='B'; ELSE SET r='C'; END IF;` |
+| `CASE`                   | Condicional múltiple (alternativa a `IF`).   | `CASE WHEN n > 10 THEN 'A' WHEN n > 5 THEN 'B' ELSE 'C' END;`                    |
+
+**📌 Nota: `CASE` puede usarse dentro de SELECT y dentro de procedimientos.**
+
+## Bucles en SQL (procedimientos / funciones)
+
+| Bucle              | Descripción                                                          | Ejemplo                                                              |
+| ------------------ | -------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `WHILE`            | Repite mientras la condición sea verdadera.                          | `WHILE x < 10 DO SET x = x + 1; END WHILE;`                          |
+| `REPEAT ... UNTIL` | Repite **al menos una vez** y termina cuando se cumple la condición. | `REPEAT SET x = x + 1; UNTIL x >= 10 END REPEAT;`                    |
+| `LOOP`             | Bucle infinito (se controla con `LEAVE`).                            | `LOOP SET x = x + 1; IF x >= 10 THEN LEAVE loop1; END IF; END LOOP;` |
+| `LEAVE`            | Sale de un bucle.                                                    | `LEAVE loop1;`                                                       |
+| `ITERATE`          | Salta a la siguiente iteración del bucle.                            | `ITERATE loop1;`                                                     |
