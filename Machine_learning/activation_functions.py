@@ -51,7 +51,7 @@ def sigmoide_func(inputs): # r = 1 / (1+np.e**(-x))
     return output
 
 
-def ReLu_func(inputs):
+def ReLu_simplificada_func(inputs):
 
     '''Función de activación que devuelve el valor de entrada si es positivo y 0 si es negativo;
     introduce no linealidad y evita saturación en valores positivos.
@@ -66,3 +66,13 @@ def ReLu_func(inputs):
             output.append(0)
 
     return output
+
+
+class Activation_ReLu:
+
+    def forward(self,inputs):
+        # Maximum compara cada uno de los valores con un 0 y devuelve el mayor 
+        # como en la funcion anterior, relu simplificada 
+        self.output = np.maximum(0,inputs)
+
+        return self.output
