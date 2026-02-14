@@ -18,6 +18,8 @@ class Capa_densa:
         # Calcula los outputs de la capa a traves del producto escalar
         self.output = np.dot(inputs,self.weights) + self.bias  
 
+        return self.output
+
 
 # Creamos dos vectores
 # VECTOR X: lista de n=100 entre 0 y 2*pi 
@@ -51,4 +53,4 @@ capa1.forward(Data) #
 #   (100x3) · (3x6) + (1x6) → (100x6)
 capa2.forward(capa1.output)
 
-print(capa2.output)
+#print(capa2.output)
