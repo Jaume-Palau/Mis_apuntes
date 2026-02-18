@@ -1,5 +1,8 @@
-'''Softmax transforma un conjunto de puntuaciones en probabilidades, 
-asignando mayor peso a los valores más altos y normalizando el resultado para que la suma sea 1.'''
+'''Softmax:
+- Convierte un vector de logits en probabilidades.
+- Las probabilidades suman 1.
+- Las clases compiten entre sí.
+- Se usa en clasificación multiclase exclusiva.'''
 
 import numpy as np
 import matplotlib.pyplot as plt

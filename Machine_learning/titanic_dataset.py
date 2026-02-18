@@ -65,6 +65,6 @@ activacion2.forward(capa2.output)
 
 # El resultado final sera un set de 2 columnas con las probabilidades de positivo o negativo
 print('-----')
-print(activacion2.output[:1])
+print(activacion2.output[:])
 
 

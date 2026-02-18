@@ -38,9 +38,11 @@ def lineal_func(inputs): # y = m*x + b
 
 def sigmoide_func(inputs): # r = 1 / (1+np.e**(-x))
 
-    '''Comprime los valores en un rango entre 0 y 1
-    Se usa para interpretar salidas como probabilidades.
-    '''
+    '''Sigmoid:
+    - Transforma un valor en un número entre 0 y 1.
+    - Modela la probabilidad de una clase positiva.
+    - Cada neurona es independiente.
+    - Se usa en clasificación binaria (1 salida) o multilabel.'''
 
     output = []
 
