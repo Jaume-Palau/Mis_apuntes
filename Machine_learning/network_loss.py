@@ -35,3 +35,19 @@ class Loss_CategoriclalCrossEntropy(Loss):
         perdida = -np.log(confianza)
 
         return perdida
+    
+
+    def backwards(self,dvalues,y_true):
+
+        muestras = len(dvalues)
+        etiquetas = len(dvalues[0])
+
+        if len(y_true.shape) == 1:
+            y_true = np.eye(etiquetas)[y_true]
+
+        # Calculo el gradiente
+        self.dinputs = -y_true/dvalues
+
+        # Normalizo el vectorgradiente con el numero de muestras
+        self.dinputs = self.dinputs/muestras
+

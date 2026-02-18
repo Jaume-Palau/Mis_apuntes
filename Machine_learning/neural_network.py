@@ -17,8 +17,20 @@ class Capa_densa:
     def forward(self, inputs):
         # Calcula los outputs de la capa a traves del producto escalar
         self.output = np.dot(inputs,self.weights) + self.bias  
+        # Recordar los inputs para el backpropagation
+        self.inputs = inputs
 
         return self.output
+    
+
+    def backwards(self,dvalues):
+
+        # Gradiente de los parametros.
+        self.dweights = np.dot(self.inputs.T,dvalues)
+        self.bias = np.sum(dvalues,axis=0,keepdims=True)
+
+        # Gradiente de los valores
+        self.dinputs = np.dot(dvalues,self.dweights.T)
 
 
 # Creamos dos vectores
