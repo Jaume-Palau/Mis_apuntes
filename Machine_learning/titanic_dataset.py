@@ -43,15 +43,18 @@ X = np.array(df_limpio)
 # Importamos las funciones que hemos creado anteriormente de las capas
 from neural_network import Capa_densa # Para las capas ocultas
 from activation_functions import Activation_ReLu # Para las capas ocultas
-from softmax import Activation_softmax # Para la capa de salida
+from softmax import Activation_softmax, Activation_Softmax_Loss_CategoricalCrossentropy # Para la capa de salida
 
 # Creacion de la primera capa oculta y su activacion
 capa1 = Capa_densa(6,10)
 activacion1 = Activation_ReLu()
 
-# Creacion de la segubnda capa oculta y su activacion
+# Creacion de la segunda capa oculta y su activacion
 capa2 = Capa_densa(10,2)
 activacion2 = Activation_softmax()
+
+# Creacion de la funcion de perdida
+loss_activation = Activation_Softmax_Loss_CategoricalCrossentropy()
 
 # Iniciamos la red con los valores limpios del df
 capa1.forward(X)
@@ -64,7 +67,32 @@ capa2.forward(activacion1.output)
 activacion2.forward(capa2.output)
 
 # El resultado final sera un set de 2 columnas con las probabilidades de positivo o negativo
+print('----- PRE ENTRENAMIENTO -----')
+print(activacion2.output[:3])
 print('-----')
-print(activacion2.output[:])
+
+# Calculamos la perdida --> Cuanto de grande es el error
+loss = loss_activation.forward(activacion2.output,Y)
+print(f'Perdida = {loss}')
+
+# Obtenemos la clase predicha (índice con mayor probabilidad)
+predicciones = np.argmax(loss_activation.output, axis=1)
+
+# Si Y es one-hot lo transformamos a indices de clases
+if len(Y.shape)==2:
+    Y = np.argmax(Y,axis=1)
+
+# Calculamos la precision --> porcentaje de aciertos
+precision = np.mean(predicciones==Y)
+print(f'Precision = {precision}')
 
 
+'''EN ESTE PUNTO EMPIEZAN LOS BACKWARDS PARA CALCULAR LOS GRADIENTES'''
+## El proceso es justo la inversa del forward!!
+## Tener en cuenta que activacion2.forward(capa2.output) ya no sirve porque esta dentro
+## de la combinada loss_activation = Activation_Softmax_Loss_CategoricalCrossentropy()
+
+loss_activation.backwards(loss_activation.output,Y)
+capa2.backwards(loss_activation.dinputs)
+activacion1.backward(capa2.dinputs)
+capa1.backwards(activacion1.dinputs)

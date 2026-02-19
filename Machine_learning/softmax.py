@@ -6,6 +6,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
+from network_loss import Loss_CategoriclalCrossEntropy
+
 
 class Activation_softmax:
 
@@ -37,3 +39,39 @@ class Activation_softmax:
             # Calculamos el gradiente del output
             self.dinputs[index] = np.dot(matrix_jacobiana, single_values)
 
+
+class Activation_Softmax_Loss_CategoricalCrossentropy():
+
+    def __init__(self):
+
+        self.activation = Activation_softmax()
+        self.loss = Loss_CategoriclalCrossEntropy()
+
+    def forward(self,inputs,y_true):
+
+        # Funcion de activacion de la capa de salida
+        self.activation.forward(inputs)
+
+        # Fijamos el output como el resultado de la funcion de activacion
+        self.output = self.activation.output
+
+        # Calculamos y devolvemos el valor de perdida
+        return self.loss.calculate(self.output,y_true)
+    
+    def backwards(self,dvalues,y_true):
+
+        # Numero de muestras
+        muestras = len(dvalues)
+
+        # Transormar los valores de one-hot a indices
+        if len(y_true.shape) == 2:
+            y_true = np.argmax(y_true, axis=1)
+
+        # Copiar los valores para porder actualizarlos sin modificar los previos
+        self.dinputs = dvalues.copy()
+
+        # Calculamos el gradiente
+        self.dinputs[range(muestras),y_true] -= 1
+
+        # Normalizamos el gradiente
+        self.dinputs = self.dinputs / muestras

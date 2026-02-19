@@ -73,8 +73,19 @@ def ReLu_simplificada_func(inputs):
 class Activation_ReLu:
 
     def forward(self,inputs):
+        self.inputs = inputs
         # Maximum compara cada uno de los valores con un 0 y devuelve el mayor 
         # como en la funcion anterior, relu simplificada 
         self.output = np.maximum(0,inputs)
 
         return self.output
+    
+
+    def backward(self, dvalues):
+
+        # Como tenemos que modificar los valores hacemos una copia
+        self.dinputs = dvalues.copy()
+
+        # El gradiente es 0 cuando los valore son negativos porque la neurona esta desactivada
+        self.dinputs[self.inputs <=0] = 0
+
