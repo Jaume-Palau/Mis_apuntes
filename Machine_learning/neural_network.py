@@ -27,10 +27,10 @@ class Capa_densa:
 
         # Gradiente de los parametros.
         self.dweights = np.dot(self.inputs.T,dvalues)
-        self.bias = np.sum(dvalues,axis=0,keepdims=True)
+        self.dbias = np.sum(dvalues,axis=0,keepdims=True)
 
         # Gradiente de los valores
-        self.dinputs = np.dot(dvalues,self.dweights.T)
+        self.dinputs = np.dot(dvalues,self.weights.T)
 
 
 # Creamos dos vectores
