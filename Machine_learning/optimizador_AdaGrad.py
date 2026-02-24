@@ -1,3 +1,5 @@
+'''CON ESTE OPTIMIZADOR, EL LEARNING RATE SE VA REAJUSTANDO AUTOMATICAMENTE'''
+
 import numpy as np
 
 class Optimizer_AdaGrad():
@@ -14,7 +16,7 @@ class Optimizer_AdaGrad():
     def pre_update_params(self):
 
         if self.decay:
-            self.current_learningrate = self.learning_rate * (1./ (1+self.decay*self.iteration))
+            self.current_learning_rate = self.learning_rate * (1./ (1+self.decay*self.iteration))
         
 
     def update_params(self,layer):
@@ -27,8 +29,8 @@ class Optimizer_AdaGrad():
         layer.weight_cache += layer.dweights**2
         layer.bias_cache += layer.dbias**2
         
-        layer.weigths += -self.current_learningrate * layer.dweights / (np.sqrt(layer.weight_cache)) + self.epsilon
-        layer.bias += -self.current_learningrate * layer.dbias / (np.sqrt(layer.bias_cache)+ self.epsilon) 
+        layer.weights += -self.current_learning_rate * layer.dweights / (np.sqrt(layer.weight_cache)+ self.epsilon)
+        layer.bias += -self.current_learning_rate * layer.dbias / (np.sqrt(layer.bias_cache)+ self.epsilon) 
 
     
     def post_update_params(self):

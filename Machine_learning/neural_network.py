@@ -8,7 +8,7 @@ class Capa_densa:
     def __init__(self,n_inputs,n_neuronas):
 
         # inicio los pesos aleatorios
-        self.weights = 0.01 * np.random.rand(n_inputs,n_neuronas)
+        self.weights = 0.01 * np.random.randn(n_inputs,n_neuronas)
 
         # inicio los sesgos de la capa en 0
         self.bias = np.zeros((1,n_neuronas))

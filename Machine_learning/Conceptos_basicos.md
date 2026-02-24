@@ -56,3 +56,28 @@ Una pasada completa: forward + backward + actualización.
 
 ### 17. Muestras (Batch)
 Conjunto de datos que se procesan juntos.
+
+### 18. Learning Rate (Tasa de aprendizaje)
+Factor que controla el tamaño del paso al actualizar los pesos.  
+Si es muy grande → puede hacer que el entrenamiento sea inestable.  
+Si es muy pequeño → el modelo aprende muy lento.
+
+### 19. Decay
+Reducción progresiva del learning rate con el tiempo.  
+Permite empezar con pasos grandes y después afinar el ajuste.
+
+### 20. Optimizador
+Algoritmo que actualiza los pesos usando los gradientes.  
+Ejemplos: SGD, AdaGrad, RMSProp.
+
+### 21. Cache (en optimizadores adaptativos)
+Memoria interna que almacena información de gradientes anteriores  
+para ajustar dinámicamente el tamaño del paso.
+
+### 22. AdaGrad
+Optimizador que acumula el cuadrado de los gradientes.  
+Hace que el learning rate efectivo disminuya con el tiempo.
+
+### 23. RMSProp
+Optimizador que usa una media exponencial del cuadrado del gradiente.  
+Evita que el learning rate se vuelva demasiado pequeño.

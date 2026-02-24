@@ -4,6 +4,8 @@
 import numpy as np
 import pandas as pd
 
+np.random.seed(0)
+
 # importar el dataset
 df = pd.read_csv('/home/jaume/ConquerX/Mis_apuntes/Machine_learning/Titanic-Dataset.csv')
 
@@ -45,6 +47,9 @@ from neural_network import Capa_densa # Para las capas ocultas
 from activation_functions import Activation_ReLu # Para las capas ocultas
 from softmax import Activation_softmax, Activation_Softmax_Loss_CategoricalCrossentropy # Para la capa de salida
 from SDG_optimizador import Optimizer_SDG
+from AdaGrad_optimizador import Optimizer_AdaGrad
+from RMSprop_optimizador import Optimizer_RMSProp
+from Adam_optimizador import Optimizer_Adam
 
 # Creacion de la primera capa oculta y su activacion
 capa1 = Capa_densa(6,10)
@@ -52,17 +57,20 @@ activacion1 = Activation_ReLu()
 
 # Creacion de la segunda capa oculta y su activacion
 capa2 = Capa_densa(10,2)
-activacion2 = Activation_softmax()
+#activacion2 = Activation_softmax()
 
 # Creacion de la funcion de perdida
 loss_activation = Activation_Softmax_Loss_CategoricalCrossentropy()
 
 # Creamos el optimizador
-optimizador = Optimizer_SDG(learning_rate=0.01,decay=1e-3,momentum=0)
+#optimizador = Optimizer_SDG(learning_rate=0.01,decay=1e-3,momentum=0)
+#optimizador = Optimizer_AdaGrad(decay=1e-3)
+#optimizador = Optimizer_RMSProp(decay=1e-4)
+optimizador = Optimizer_Adam(decay=1e-4)
 
 '''INICIO DE LA RED NEURONAL'''
 
-for epoch in range(1000):
+for epoch in range(501):
 
     capa1.forward(X)
     # Funcion de activacion sobre los outputs de la capa 1
@@ -71,7 +79,7 @@ for epoch in range(1000):
     # Pasamos los datos a la siguiente capa(2) ya procesados con la funcion de activacion
     capa2.forward(activacion1.output)
     # Procesamos esos datos con la funcion softmax 
-    activacion2.forward(capa2.output)
+    #activacion2.forward(capa2.output)
 
     # El resultado final sera un set de 2 columnas con las probabilidades de positivo o negativo
     # print('----- PRE ENTRENAMIENTO -----')
@@ -79,7 +87,7 @@ for epoch in range(1000):
     # print('-----')
 
     # Calculamos la perdida --> Cuanto de grande es el error
-    loss = loss_activation.forward(activacion2.output,Y)
+    loss = loss_activation.forward(capa2.output,Y)
     # print(f'Perdida = {loss}')
 
     # Obtenemos la clase predicha (índice con mayor probabilidad)
@@ -114,7 +122,8 @@ for epoch in range(1000):
     if not epoch % 10:
         print(f'epoch: {epoch}, '+
               f'precision: {precision:.3f}, '+
-              f'perdida: {loss:.3f}')
+              f'perdida: {loss:.3f}, '+
+              f'Lr: {optimizador.current_learning_rate:.5f}')
         
         # print("pred0:", np.sum(predicciones==0), "pred1:", np.sum(predicciones==1))
         # print("true0:", np.sum(Y==0), "true1:", np.sum(Y==1))
