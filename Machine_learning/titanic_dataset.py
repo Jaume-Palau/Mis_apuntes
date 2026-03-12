@@ -46,10 +46,10 @@ X = np.array(df_limpio)
 from neural_network import Capa_densa # Para las capas ocultas
 from activation_functions import Activation_ReLu # Para las capas ocultas
 from softmax import Activation_softmax, Activation_Softmax_Loss_CategoricalCrossentropy # Para la capa de salida
-from SDG_optimizador import Optimizer_SDG
-from AdaGrad_optimizador import Optimizer_AdaGrad
-from RMSprop_optimizador import Optimizer_RMSProp
-from Adam_optimizador import Optimizer_Adam
+from Machine_learning.optimizador_SDG import Optimizer_SDG
+from Machine_learning.optimizador_AdaGrad import Optimizer_AdaGrad
+from Machine_learning.optimizador_RMSprop import Optimizer_RMSProp
+from Machine_learning.optimizador_Adam import Optimizer_Adam
 
 # Creacion de la primera capa oculta y su activacion
 capa1 = Capa_densa(6,10)
