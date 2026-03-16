@@ -46,10 +46,11 @@ X = np.array(df_limpio)
 from neural_network import Capa_densa # Para las capas ocultas
 from activation_functions import Activation_ReLu # Para las capas ocultas
 from softmax import Activation_softmax, Activation_Softmax_Loss_CategoricalCrossentropy # Para la capa de salida
-from Machine_learning.optimizador_SDG import Optimizer_SDG
-from Machine_learning.optimizador_AdaGrad import Optimizer_AdaGrad
-from Machine_learning.optimizador_RMSprop import Optimizer_RMSProp
-from Machine_learning.optimizador_Adam import Optimizer_Adam
+from optimizador_SDG import Optimizer_SDG
+from optimizador_AdaGrad import Optimizer_AdaGrad
+from optimizador_RMSprop import Optimizer_RMSProp
+from optimizador_Adam import Optimizer_Adam
+import json
 
 # Creacion de la primera capa oculta y su activacion
 capa1 = Capa_densa(6,10)
@@ -127,3 +128,24 @@ for epoch in range(501):
         
         # print("pred0:", np.sum(predicciones==0), "pred1:", np.sum(predicciones==1))
         # print("true0:", np.sum(Y==0), "true1:", np.sum(Y==1))
+
+print('modelo entrnado')
+
+## EXPORTACION DEL MODELO:
+
+data_export = {
+    'capa1':{
+        'weights':capa1.weights.tolist(),
+        'bias':capa1.bias.tolist(),
+    },
+    'capa2':{
+        'weights':capa2.weights.tolist(),
+        'bias':capa2.bias.tolist(),
+    }
+}
+
+json_data_path = 'model_parameters.json'
+
+with open(json_data_path,"w") as json_file:
+    json.dump(data_export,json_file)
+    
