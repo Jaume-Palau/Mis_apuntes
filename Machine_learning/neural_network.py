@@ -5,13 +5,18 @@ import numpy as np
 class Capa_densa:
     # Inicializacion de la capa
 
-    def __init__(self,n_inputs,n_neuronas):
+    def __init__(self,n_inputs,n_neuronas,weight_regularizer_l1 = 0,weight_regularizer_l2 = 0,bias_regularizer_l1 = 0,bias_regularizer_l2 = 0):
 
         # inicio los pesos aleatorios
         self.weights = 0.01 * np.random.randn(n_inputs,n_neuronas)
 
         # inicio los sesgos de la capa en 0
         self.bias = np.zeros((1,n_neuronas))
+
+        self.weight_regularizer_l1 = weight_regularizer_l1
+        self.weight_regularizer_l2 = weight_regularizer_l2
+        self.bias_regularizer_l1 = bias_regularizer_l1
+        self.bias_regularizer_l2 = bias_regularizer_l2
 
 
     def forward(self, inputs):
@@ -23,14 +28,35 @@ class Capa_densa:
         return self.output
     
 
-    def backwards(self,dvalues):
+def backwards(self,dvalues):
 
-        # Gradiente de los parametros.
-        self.dweights = np.dot(self.inputs.T,dvalues)
-        self.dbias = np.sum(dvalues,axis=0,keepdims=True)
+    # Gradiente de los parametros
+    self.dweights = np.dot(self.inputs.T,dvalues)
+    self.dbias = np.sum(dvalues,axis=0,keepdims=True)
 
-        # Gradiente de los valores
-        self.dinputs = np.dot(dvalues,self.weights.T)
+    # Regularizacion L1 weights
+    if self.weight_regularizer_l1 > 0:
+        d_l1 = np.ones_like(self.weights)
+        d_l1[self.weights < 0] = -1
+        self.dweights += self.weight_regularizer_l1 * d_l1
+
+    # Regularizacion L2 weights
+    if self.weight_regularizer_l2 > 0:
+        self.dweights += 2 * self.weight_regularizer_l2 * self.weights
+
+    # Regularizacion L1 bias
+    if self.bias_regularizer_l1 > 0:
+        d_l1 = np.ones_like(self.bias)
+        d_l1[self.bias < 0] = -1
+        self.dbias += self.bias_regularizer_l1 * d_l1
+
+    # Regularizacion L2 bias
+    if self.bias_regularizer_l2 > 0:
+        self.dbias += 2 * self.bias_regularizer_l2 * self.bias
+
+    # Gradiente de los valores
+    self.dinputs = np.dot(dvalues,self.weights.T)
+
 
 
 # Creamos dos vectores
