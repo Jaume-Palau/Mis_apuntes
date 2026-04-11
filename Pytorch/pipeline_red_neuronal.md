@@ -11,9 +11,10 @@
    - tratar valores nulos
 4. Convertir variables categóricas a numéricas (one-hot encoding)
 5. Fijarse en la distribucion de valores (0/1) en la variable objetivo(database['Outcome'].value_counts())
-6. Normalizar datos (si es necesario)
-7. Separar dataset (train / test)
+6. Separar dataset (train / test)
+7. Escalar datos (si es necesario.solo en train)
 8. Convertir datos a tensores
+9. Empaquetar Tensores (TensorDataset-DataLoader)
 
 👉 Si este bloque falla → todo falla
 
@@ -28,7 +29,7 @@
 2. Definir hiperparámetros
    - learning rate
    - epochs
-   - batch size
+   - estatus print
 
 3. Crear objetos
    - modelo
