@@ -1,0 +1,69 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            7l2ckiqfvdevydlsi4ia704g5k0n4ldt:
+                codePath: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/ejercicio_Pima_Indians_Diabetes.ipynb
+                codePathLocal: ejercicio_Pima_Indians_Diabetes.ipynb
+                cpu_count: 8
+                cpu_count_logical: 16
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "100193038336"
+                        used: "48067674112"
+                email: jpalauserrano@gmail.com
+                executable: /home/jaume/miniconda3/envs/torch/bin/python
+                git:
+                    commit: 735b5614b130434c2ca59eb209569943ecddb59e
+                    remote: git@github.com:Jaume-Palau/Mis_apuntes.git
+                gpu: NVIDIA GeForce RTX 4060 Ti
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 4352
+                      memoryTotal: "17175674880"
+                      name: NVIDIA GeForce RTX 4060 Ti
+                      uuid: GPU-01654a73-47bd-4744-e01e-24b6fdeac28a
+                host: ubuntujaume
+                memory:
+                    total: "33508589568"
+                os: Linux-6.8.0-117-generic-x86_64-with-glibc2.35
+                program: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/ejercicio_Pima_Indians_Diabetes.ipynb
+                python: CPython 3.11.14
+                root: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning
+                startedAt: "2026-05-20T10:35:21.441469Z"
+                writerId: 7l2ckiqfvdevydlsi4ia704g5k0n4ldt
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 17
+            "4": 3.11.14
+            "5": 0.27.0
+            "8":
+                - 1
+            "12": 0.27.0
+            "13": linux-x86_64
+batch_size:
+    value: 64
+dropout:
+    value: 0.2
+epoch:
+    value: 100
+hidden_size:
+    value: 8
+learning_rate:
+    value: 0.001
+weight_decay:
+    value: 0

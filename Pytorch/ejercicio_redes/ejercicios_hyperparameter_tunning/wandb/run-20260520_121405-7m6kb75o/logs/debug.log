@@ -1,0 +1,133 @@
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_setup.py:_flush():81] Configure stats pid to 10415
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/wandb/run-20260520_121405-7m6kb75o/logs/debug.log
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/wandb/run-20260520_121405-7m6kb75o/logs/debug-internal.log
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_init.py:monkeypatch_ipython():642] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x78f91e1e9f90>
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():851] calling init triggers
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():856] wandb.init called with sweep_config: {'batch_size': 16, 'dropout': 0.2, 'epoch': 100, 'hidden_size': 8, 'learning_rate': 0.01, 'weight_decay': 0}
+config: {'_wandb': {}}
+2026-05-20 12:14:05,671 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():899] starting backend
+2026-05-20 12:14:05,874 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():914] sending inform_init request
+2026-05-20 12:14:06,176 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():919] backend started and connected
+2026-05-20 12:14:06,184 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_config_callback():1332] config_cb None None {'batch_size': 16, 'dropout': 0.2, 'epoch': 100, 'hidden_size': 8, 'learning_rate': 0.01, 'weight_decay': 0}
+2026-05-20 12:14:06,185 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_label_probe_notebook():1262] probe notebook
+2026-05-20 12:14:06,186 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():989] updated telemetry
+2026-05-20 12:14:06,189 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-05-20 12:14:07,097 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():1057] starting run threads in backend
+2026-05-20 12:14:07,201 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_console_start():2509] atexit reg
+2026-05-20 12:14:07,201 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-05-20 12:14:07,201 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-05-20 12:14:07,201 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-05-20 12:14:07,201 INFO    Thread-10 (_run_job):10415 [wandb_init.py:init():1095] run started, returning control to user process
+2026-05-20 12:14:08,510 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:14:08,512 ERROR   wandb-AsyncioManager-main:10415 [service_client.py:_forward_responses():119] Error reading server response.
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 115, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 129, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/asyncio/streams.py", line 750, in readexactly
+    await self._wait_for_data('readexactly')
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/asyncio/streams.py", line 543, in _wait_for_data
+    await self._waiter
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/asyncio/selector_events.py", line 999, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+2026-05-20 12:14:08,514 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:14:08,516 INFO    wandb-AsyncioManager-main:10415 [mailbox.py:close():154] Closing mailbox, abandoning 1 handles.
+2026-05-20 12:14:08,516 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:14:08,586 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_finish():2271] finishing run jpalauserrano-conquer-blocks/Pima-Indians-Diabetes/7m6kb75o
+2026-05-20 12:14:08,647 INFO    Thread-10 (_run_job):10415 [wandb_run.py:_finish():2271] finishing run jpalauserrano-conquer-blocks/Pima-Indians-Diabetes/7m6kb75o
+2026-05-20 12:14:08,760 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:14:17,211 ERROR   wandb-AsyncioManager-main:10415 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_messages.py", line 105, in loop
+    await self._poll_and_print(timeout=None)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_messages.py", line 133, in _poll_and_print
+    handle = await self._interface.deliver_async(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 58, in deliver_async
+    handle = await self._client.deliver(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 57, in deliver
+    handle = self._mailbox.require_response(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/mailbox.py", line 89, in require_response
+    raise MailboxClosedError()
+wandb.sdk.mailbox.mailbox.MailboxClosedError
+2026-05-20 12:14:22,207 ERROR   wandb-AsyncioManager-main:10415 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_stopping.py", line 87, in loop
+    should_stop = await self._check_should_stop()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_stopping.py", line 115, in _check_should_stop
+    handle = await self._interface.deliver_async(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 58, in deliver_async
+    handle = await self._client.deliver(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 57, in deliver
+    handle = self._mailbox.require_response(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/mailbox.py", line 89, in require_response
+    raise MailboxClosedError()
+wandb.sdk.mailbox.mailbox.MailboxClosedError
+2026-05-20 12:15:27,288 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:15:27,288 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:15:27,448 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:15:33,868 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:15:33,868 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:15:34,010 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:15:39,331 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:15:39,331 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:15:39,484 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:16:41,236 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:16:41,236 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:16:41,393 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:16:45,578 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:16:45,578 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:16:45,857 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:16:45,996 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:16:45,996 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:16:46,139 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:17:40,250 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:17:40,250 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:17:40,394 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:17:44,362 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:17:44,362 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:17:44,507 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:17:48,323 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:17:48,323 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:17:48,463 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:17:51,212 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:17:51,213 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:17:51,353 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:18:37,759 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:18:37,759 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:18:37,898 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:18:44,158 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:18:44,158 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:18:44,299 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:19:03,164 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:19:03,164 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:19:03,334 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:19:03,474 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:19:03,474 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:19:03,611 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:19:07,815 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:19:07,815 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:19:07,954 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:19:11,345 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:19:11,345 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:19:11,485 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend
+2026-05-20 12:19:15,656 INFO    MainThread:10415 [jupyter.py:save_ipynb():362] [no run ID] not saving jupyter notebook
+2026-05-20 12:19:15,656 INFO    MainThread:10415 [wandb_init.py:_pre_run_cell_hook():601] [no run ID] pausing backend
+2026-05-20 12:19:15,797 INFO    MainThread:10415 [wandb_init.py:_post_run_cell_hook():612] [no run ID] resuming backend

@@ -1,0 +1,51 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            55mro5a87x1s173kq1chxv49xw8n1wn5:
+                codePath: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/ejercicio_Pima_Indians_Diabetes.ipynb
+                codePathLocal: ejercicio_Pima_Indians_Diabetes.ipynb
+                email: jpalauserrano@gmail.com
+                executable: /home/jaume/miniconda3/envs/torch/bin/python
+                git:
+                    commit: 735b5614b130434c2ca59eb209569943ecddb59e
+                    remote: git@github.com:Jaume-Palau/Mis_apuntes.git
+                host: ubuntujaume
+                os: Linux-6.8.0-117-generic-x86_64-with-glibc2.35
+                program: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/ejercicio_Pima_Indians_Diabetes.ipynb
+                python: CPython 3.11.14
+                root: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning
+                startedAt: "2026-05-20T09:58:54.822873Z"
+                writerId: 55mro5a87x1s173kq1chxv49xw8n1wn5
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+            "4": 3.11.14
+            "5": 0.27.0
+            "8":
+                - 1
+            "12": 0.27.0
+            "13": linux-x86_64
+batch_size:
+    value: 64
+dropout:
+    value: 0.2
+epoch:
+    value: 100
+hidden_size:
+    value: 12
+learning_rate:
+    value: 0.01
+weight_decay:
+    value: 0

@@ -1,0 +1,17 @@
+{
+  "os": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.14",
+  "startedAt": "2026-05-20T09:58:54.822873Z",
+  "program": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/ejercicio_Pima_Indians_Diabetes.ipynb",
+  "codePath": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning/ejercicio_Pima_Indians_Diabetes.ipynb",
+  "codePathLocal": "ejercicio_Pima_Indians_Diabetes.ipynb",
+  "git": {
+    "remote": "git@github.com:Jaume-Palau/Mis_apuntes.git",
+    "commit": "735b5614b130434c2ca59eb209569943ecddb59e"
+  },
+  "email": "jpalauserrano@gmail.com",
+  "root": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/ejercicios_hyperparameter_tunning",
+  "host": "ubuntujaume",
+  "executable": "/home/jaume/miniconda3/envs/torch/bin/python",
+  "writerId": "55mro5a87x1s173kq1chxv49xw8n1wn5"
+}
