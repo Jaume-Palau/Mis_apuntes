@@ -5,16 +5,20 @@
 ## 🔴 BLOQUE 1 — DATOS
 
 1. Importar datos
-2. Identificar variable objetivo (y)
+2. Identificar variable objetivo
 3. Limpiar datos
    - eliminar columnas irrelevantes
    - tratar valores nulos
-4. Convertir variables categóricas a numéricas (one-hot encoding)
-5. Fijarse en la distribucion de valores (0/1) en la variable objetivo(database['Outcome'].value_counts())
-6. Separar dataset (train / test)
-7. Escalar datos (si es necesario.solo en train)
-8. Convertir datos a tensores
-9. Empaquetar Tensores (TensorDataset-DataLoader)
+   - tratar duplicados
+4. Mapear la variable objetivo
+5. Separar X e y
+6. Separar train / validation / test
+7. Ajustar OneHotEncoder con X_train
+8. Codificar X_train, X_val y X_test
+9. Ajustar StandardScaler con X_train
+10. Escalar X_train, X_val y X_test
+11. Convertir datos a tensores
+12. Crear TensorDataset y DataLoader
 
 👉 Si este bloque falla → todo falla
 
