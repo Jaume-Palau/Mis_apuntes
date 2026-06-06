@@ -1,0 +1,238 @@
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_setup.py:_flush():81] Configure stats pid to 9648
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/wandb/run-20260606_082926-ijdckk5k/logs/debug.log
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/wandb/run-20260606_082926-ijdckk5k/logs/debug-internal.log
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_init.py:monkeypatch_ipython():642] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x77655251b150>
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():851] calling init triggers
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():856] wandb.init called with sweep_config: {'batch_size': 16, 'dropout': 0.2, 'epochs': 10, 'hidden_size_1': 128, 'hidden_size_2': 16, 'lr': 0.001, 'weight_decay': 0}
+config: {'_wandb': {}}
+2026-06-06 08:29:26,550 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():899] starting backend
+2026-06-06 08:29:26,753 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():914] sending inform_init request
+2026-06-06 08:29:27,050 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():919] backend started and connected
+2026-06-06 08:29:27,053 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_config_callback():1332] config_cb None None {'batch_size': 16, 'dropout': 0.2, 'epochs': 10, 'hidden_size_1': 128, 'hidden_size_2': 16, 'lr': 0.001, 'weight_decay': 0}
+2026-06-06 08:29:27,055 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_label_probe_notebook():1262] probe notebook
+2026-06-06 08:29:27,056 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():989] updated telemetry
+2026-06-06 08:29:27,059 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-06-06 08:29:27,364 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():1057] starting run threads in backend
+2026-06-06 08:29:27,468 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_console_start():2509] atexit reg
+2026-06-06 08:29:27,469 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-06-06 08:29:27,469 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-06-06 08:29:27,469 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-06-06 08:29:27,469 INFO    Thread-106 (_run_job):9648 [wandb_init.py:init():1095] run started, returning control to user process
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_finish():2271] finishing run jpalauserrano-conquer-blocks/Teleco-Customer-Churn/ijdckk5k
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [jupyter.py:save_history():435] not saving jupyter history
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [jupyter.py:save_ipynb():362] not saving jupyter notebook
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [wandb_init.py:_jupyter_teardown():627] cleaning up jupyter logic
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_atexit_cleanup():2476] got exitcode: 1
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_restore():2458] restore
+2026-06-06 08:29:27,899 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_restore():2464] restore done
+2026-06-06 08:29:28,745 INFO    wandb-AsyncioManager-main:9648 [service_client.py:_forward_responses():122] Reached EOF.
+2026-06-06 08:29:28,745 INFO    wandb-AsyncioManager-main:9648 [mailbox.py:close():154] Closing mailbox, abandoning 2 handles.
+2026-06-06 08:29:28,746 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_restore():2458] restore
+2026-06-06 08:29:28,746 INFO    Thread-106 (_run_job):9648 [wandb_run.py:_restore():2464] restore done
+2026-06-06 08:29:28,746 ERROR   Thread-106 (_run_job):9648 [wandb_run.py:_atexit_cleanup():2496] Problem finishing run
+Traceback (most recent call last):
+  File "/tmp/ipykernel_9648/736629571.py", line 22, in train_sweep
+    train_model(
+  File "/tmp/ipykernel_9648/810236464.py", line 67, in train_model
+    "hidden_size_1": config.hidden_size_1,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'hidden_size_1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2487, in _atexit_cleanup
+    self._on_finish()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/wandb_run.py", line 2744, in _on_finish
+    result = wait_with_progress(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 78, in wait_all_with_progress
+    return asyncer.run(progress_loop_with_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 137, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 73, in progress_loop_with_timeout
+    return await _wait_handles_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 96, in _wait_handles_async
+    async with asyncio_compat.open_task_group() as task_group:
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/contextlib.py", line 217, in __aexit__
+    await anext(self.gen)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_compat.py", line 241, in open_task_group
+    await task_group._wait_all(race=race, timeout=exit_timeout)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_compat.py", line 181, in _wait_all
+    raise exc
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/wait_with_progress.py", line 94, in wait_single
+    results[index] = await handle.wait_async(timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/mailbox_handle.py", line 127, in wait_async
+    response = await self._handle.wait_async(timeout=timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/response_handle.py", line 123, in wait_async
+    raise HandleAbandonedError()
+wandb.sdk.mailbox.mailbox_handle.HandleAbandonedError
+2026-06-06 08:29:37,479 ERROR   wandb-AsyncioManager-main:9648 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_messages.py", line 105, in loop
+    await self._poll_and_print(timeout=None)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_messages.py", line 133, in _poll_and_print
+    handle = await self._interface.deliver_async(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 58, in deliver_async
+    handle = await self._client.deliver(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 57, in deliver
+    handle = self._mailbox.require_response(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/mailbox.py", line 89, in require_response
+    raise MailboxClosedError()
+wandb.sdk.mailbox.mailbox.MailboxClosedError
+2026-06-06 08:29:42,475 ERROR   wandb-AsyncioManager-main:9648 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_stopping.py", line 87, in loop
+    should_stop = await self._check_should_stop()
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/run_stopping.py", line 115, in _check_should_stop
+    handle = await self._interface.deliver_async(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/interface/interface_sock.py", line 58, in deliver_async
+    handle = await self._client.deliver(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 57, in deliver
+    handle = self._mailbox.require_response(request)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/mailbox/mailbox.py", line 89, in require_response
+    raise MailboxClosedError()
+wandb.sdk.mailbox.mailbox.MailboxClosedError
+2026-06-06 08:30:06,299 INFO    MainThread:9648 [pyagent.py:run():330] [no run ID] Starting sweep agent: entity=None, project=None, count=3
+2026-06-06 08:30:07,228 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():237] [no run ID] Run twru2zau errored:
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/agents/pyagent.py", line 297, in _run_job
+    wandb.teardown()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 595, in teardown
+    orig_singleton._teardown(exit_code=exit_code)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/wandb_setup.py", line 372, in _teardown
+    internal_exit_code = self._connection.teardown(exit_code or 0)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_connection.py", line 375, in teardown
+    self._asyncer.run(publish_teardown_and_close)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 137, in run
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 223, in _wrap
+    return await fn()
+           ^^^^^^^^^^
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_connection.py", line 366, in publish_teardown_and_close
+    await self._client.publish(
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 42, in publish
+    await self._send_server_request(request)
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 84, in _send_server_request
+    await self._drain_writer()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 92, in _drain_writer
+    await self._writer.drain()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+
+2026-06-06 08:30:19,731 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():237] [no run ID] Run emeo8sfg errored:
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/agents/pyagent.py", line 304, in _run_job
+    self._function()
+  File "/tmp/ipykernel_9648/3409693761.py", line 1, in <lambda>
+    wandb.agent(sweep_id=sweep_id, function=lambda:train_sweep(config), count=3)
+                                                   ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_9648/736629571.py", line 22, in train_sweep
+    train_model(
+  File "/tmp/ipykernel_9648/810236464.py", line 67, in train_model
+    "hidden_size_1": config.hidden_size_1,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'hidden_size_1'
+
+2026-06-06 08:30:25,721 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():237] [no run ID] Run 5zg1lj3b errored:
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/agents/pyagent.py", line 304, in _run_job
+    self._function()
+  File "/tmp/ipykernel_9648/3409693761.py", line 1, in <lambda>
+    wandb.agent(sweep_id=sweep_id, function=lambda:train_sweep(config), count=3)
+                                                   ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_9648/736629571.py", line 22, in train_sweep
+    train_model(
+  File "/tmp/ipykernel_9648/810236464.py", line 67, in train_model
+    "hidden_size_1": config.hidden_size_1,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'hidden_size_1'
+
+2026-06-06 08:30:25,721 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():246] [no run ID] Detected 3 failed runs in the first 60 seconds, killing sweep.
+2026-06-06 08:33:18,238 INFO    MainThread:9648 [pyagent.py:run():330] [no run ID] Starting sweep agent: entity=None, project=None, count=3
+2026-06-06 08:33:22,267 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():237] [no run ID] Run fuzbsdtc errored:
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/agents/pyagent.py", line 304, in _run_job
+    self._function()
+  File "/tmp/ipykernel_9648/3409693761.py", line 1, in <lambda>
+    wandb.agent(sweep_id=sweep_id, function=lambda:train_sweep(config), count=3)
+                                                   ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_9648/736629571.py", line 22, in train_sweep
+    train_model(
+  File "/tmp/ipykernel_9648/810236464.py", line 67, in train_model
+    "hidden_size_1": config.hidden_size_1,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'hidden_size_1'
+
+2026-06-06 08:33:28,065 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():237] [no run ID] Run flf0y9ms errored:
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/agents/pyagent.py", line 304, in _run_job
+    self._function()
+  File "/tmp/ipykernel_9648/3409693761.py", line 1, in <lambda>
+    wandb.agent(sweep_id=sweep_id, function=lambda:train_sweep(config), count=3)
+                                                   ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_9648/736629571.py", line 22, in train_sweep
+    train_model(
+  File "/tmp/ipykernel_9648/810236464.py", line 67, in train_model
+    "hidden_size_1": config.hidden_size_1,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'hidden_size_1'
+
+2026-06-06 08:33:33,341 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():237] [no run ID] Run yae40zyq errored:
+Traceback (most recent call last):
+  File "/home/jaume/miniconda3/envs/torch/lib/python3.11/site-packages/wandb/agents/pyagent.py", line 304, in _run_job
+    self._function()
+  File "/tmp/ipykernel_9648/3409693761.py", line 1, in <lambda>
+    wandb.agent(sweep_id=sweep_id, function=lambda:train_sweep(config), count=3)
+                                                   ^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_9648/736629571.py", line 22, in train_sweep
+    train_model(
+  File "/tmp/ipykernel_9648/810236464.py", line 67, in train_model
+    "hidden_size_1": config.hidden_size_1,
+                     ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'hidden_size_1'
+
+2026-06-06 08:33:33,341 ERROR   MainThread:9648 [pyagent.py:_run_jobs_from_queue():246] [no run ID] Detected 3 failed runs in the first 60 seconds, killing sweep.
+2026-06-06 08:38:17,450 INFO    MainThread:9648 [pyagent.py:run():330] [no run ID] Starting sweep agent: entity=None, project=None, count=1

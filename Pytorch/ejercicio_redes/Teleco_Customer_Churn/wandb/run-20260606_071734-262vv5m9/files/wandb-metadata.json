@@ -1,0 +1,40 @@
+{
+  "os": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.14",
+  "startedAt": "2026-06-06T05:17:34.350275Z",
+  "program": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/Teleco_Customer_Churn.ipynb",
+  "codePath": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/Teleco_Customer_Churn.ipynb",
+  "codePathLocal": "Teleco_Customer_Churn.ipynb",
+  "git": {
+    "remote": "git@github.com:Jaume-Palau/Mis_apuntes.git",
+    "commit": "d6437a1eac4dcb633d5134e7f6e051e985c0b317"
+  },
+  "email": "jpalauserrano@gmail.com",
+  "root": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn",
+  "host": "ubuntujaume",
+  "executable": "/home/jaume/miniconda3/envs/torch/bin/python",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "100193038336",
+      "used": "49482162176"
+    }
+  },
+  "memory": {
+    "total": "33508577280"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4060 Ti",
+      "memoryTotal": "17175674880",
+      "cudaCores": 4352,
+      "architecture": "Ada",
+      "uuid": "GPU-01654a73-47bd-4744-e01e-24b6fdeac28a"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "8yfovrb75pblzjdl3w65lxwk0ka3sua3"
+}

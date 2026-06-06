@@ -1,0 +1,1 @@
+{"val_auc":0.8205040302009998,"_timestamp":1.7807276008474522e+09,"val_loss":0.5013929581578402,"train_loss":0.5317852911383671,"_step":2,"val_precision":0,"val_recall":0,"val_accuracy":0.7352941176470589,"train_accuracy":0.7351761034329024,"_runtime":0,"_wandb":{"runtime":0},"val_f1":0}
