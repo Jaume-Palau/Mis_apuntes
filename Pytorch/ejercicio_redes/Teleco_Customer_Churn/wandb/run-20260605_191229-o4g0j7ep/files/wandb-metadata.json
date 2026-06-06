@@ -1,0 +1,17 @@
+{
+  "os": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.11.14",
+  "startedAt": "2026-06-05T17:12:29.084602Z",
+  "program": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/Teleco_Customer_Churn.ipynb",
+  "codePath": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/Teleco_Customer_Churn.ipynb",
+  "codePathLocal": "Teleco_Customer_Churn.ipynb",
+  "git": {
+    "remote": "git@github.com:Jaume-Palau/Mis_apuntes.git",
+    "commit": "cda99904ed57f20f390e3b3c400d0d11877c7f82"
+  },
+  "email": "jpalauserrano@gmail.com",
+  "root": "/home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn",
+  "host": "ubuntujaume",
+  "executable": "/home/jaume/miniconda3/envs/torch/bin/python",
+  "writerId": "ii4wilrtyayy2ys8667ikql0pj0nfc6c"
+}

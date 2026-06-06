@@ -1,0 +1,30 @@
+2026-06-05 20:53:17,648 INFO    Thread-6 (_run_job):8013 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-06-05 20:53:17,648 INFO    Thread-6 (_run_job):8013 [wandb_setup.py:_flush():81] Configure stats pid to 8013
+2026-06-05 20:53:17,648 INFO    Thread-6 (_run_job):8013 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-05 20:53:17,648 INFO    Thread-6 (_run_job):8013 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/wandb/run-20260605_205317-w9odg3xi/logs/debug.log
+2026-06-05 20:53:17,648 INFO    Thread-6 (_run_job):8013 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/wandb/run-20260605_205317-w9odg3xi/logs/debug-internal.log
+2026-06-05 20:53:17,648 INFO    Thread-6 (_run_job):8013 [wandb_init.py:monkeypatch_ipython():642] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x736438789410>
+2026-06-05 20:53:17,649 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():851] calling init triggers
+2026-06-05 20:53:17,649 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():856] wandb.init called with sweep_config: {'batch_size': 32, 'dropout': 0.2, 'epochs': 5, 'hidden_size_1': 64, 'hidden_size_2': 16, 'lr': 0.0001, 'weight_decay': 0}
+config: {'_wandb': {}}
+2026-06-05 20:53:17,649 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():899] starting backend
+2026-06-05 20:53:17,892 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():914] sending inform_init request
+2026-06-05 20:53:18,186 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():919] backend started and connected
+2026-06-05 20:53:18,197 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_config_callback():1332] config_cb None None {'batch_size': 32, 'dropout': 0.2, 'epochs': 5, 'hidden_size_1': 64, 'hidden_size_2': 16, 'lr': 0.0001, 'weight_decay': 0}
+2026-06-05 20:53:18,199 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_label_probe_notebook():1262] probe notebook
+2026-06-05 20:53:18,200 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():989] updated telemetry
+2026-06-05 20:53:18,225 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-06-05 20:53:18,518 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():1057] starting run threads in backend
+2026-06-05 20:53:18,620 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_console_start():2509] atexit reg
+2026-06-05 20:53:18,620 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-06-05 20:53:18,621 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-06-05 20:53:18,621 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-06-05 20:53:18,622 INFO    Thread-6 (_run_job):8013 [wandb_init.py:init():1095] run started, returning control to user process
+2026-06-05 20:53:20,127 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_finish():2271] finishing run jpalauserrano-conquer-blocks/Teleco-Customer-Churn/w9odg3xi
+2026-06-05 20:53:20,988 INFO    Thread-6 (_run_job):8013 [jupyter.py:save_history():435] not saving jupyter history
+2026-06-05 20:53:20,988 INFO    Thread-6 (_run_job):8013 [jupyter.py:save_ipynb():362] not saving jupyter notebook
+2026-06-05 20:53:20,988 INFO    Thread-6 (_run_job):8013 [wandb_init.py:_jupyter_teardown():627] cleaning up jupyter logic
+2026-06-05 20:53:20,988 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_atexit_cleanup():2476] got exitcode: 0
+2026-06-05 20:53:20,988 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_restore():2458] restore
+2026-06-05 20:53:20,988 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_restore():2464] restore done
+2026-06-05 20:53:21,950 INFO    Thread-6 (_run_job):8013 [wandb_run.py:_footer_sync_info():3877] logging synced files
