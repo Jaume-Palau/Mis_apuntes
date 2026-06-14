@@ -1,0 +1,1 @@
+{"val_auc":0.8416569737781858,"val_loss":0.42363059196667663,"train_accuracy":0.8000445831475702,"_step":24,"val_accuracy":0.7950089126559715,"val_f1":0.54,"model_path":"models/model_if2yfwap.pt","train_loss":0.42563402765678393,"_timestamp":1.7810051346084747e+09,"val_precision":0.6650246305418719,"val_recall":0.45454545454545453,"_runtime":3,"_wandb":{"runtime":3}}

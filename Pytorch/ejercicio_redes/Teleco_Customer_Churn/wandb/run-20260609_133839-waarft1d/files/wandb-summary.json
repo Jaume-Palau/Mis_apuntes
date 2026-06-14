@@ -1,0 +1,1 @@
+{"_timestamp":1.7810051249714508e+09,"_runtime":4,"val_f1":0.5687382297551788,"val_accuracy":0.7959001782531194,"val_loss":0.42751138818030265,"train_accuracy":0.8167632634864022,"val_recall":0.5084175084175084,"train_loss":0.40201317557149097,"val_precision":0.6452991452991453,"_step":19,"model_path":"models/model_waarft1d.pt","_wandb":{"runtime":4},"val_auc":0.8374533210896848}

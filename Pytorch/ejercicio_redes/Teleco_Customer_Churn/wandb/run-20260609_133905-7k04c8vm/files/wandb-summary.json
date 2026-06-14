@@ -1,0 +1,1 @@
+{"train_loss":0.4209657839058873,"train_accuracy":0.8071778867588052,"val_f1":0.588235294117647,"_timestamp":1.7810051574011667e+09,"val_accuracy":0.8003565062388592,"val_auc":0.8446607489031731,"val_recall":0.5387205387205387,"val_loss":0.4180596933007878,"_wandb":{"runtime":10},"model_path":"models/model_7k04c8vm.pt","val_precision":0.6477732793522267,"_step":24,"_runtime":10}

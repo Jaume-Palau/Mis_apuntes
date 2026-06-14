@@ -1,0 +1,1 @@
+{"val_precision":0.6377952755905512,"val_accuracy":0.7976827094474154,"_runtime":2,"model_path":"models/model_34nys174.pt","val_f1":0.588021778584392,"train_loss":0.4337696204799868,"val_auc":0.8414161820222426,"_timestamp":1.78100511673065e+09,"_step":14,"train_accuracy":0.7984841729826125,"val_loss":0.42302258474729065,"_wandb":{"runtime":2},"val_recall":0.5454545454545454}

@@ -1,0 +1,26 @@
+2026-06-09 15:24:12,626 INFO    Thread-84 (_run_job):10636 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-06-09 15:24:12,626 INFO    Thread-84 (_run_job):10636 [wandb_setup.py:_flush():81] Configure stats pid to 10636
+2026-06-09 15:24:12,626 INFO    Thread-84 (_run_job):10636 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-06-09 15:24:12,626 INFO    Thread-84 (_run_job):10636 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/wandb/run-20260609_152412-99fldt8x/logs/debug.log
+2026-06-09 15:24:12,626 INFO    Thread-84 (_run_job):10636 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/wandb/run-20260609_152412-99fldt8x/logs/debug-internal.log
+2026-06-09 15:24:12,627 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():851] calling init triggers
+2026-06-09 15:24:12,627 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():856] wandb.init called with sweep_config: {'batch_size': 32, 'dropout': 0.4, 'epochs': 10, 'hidden_size_1': 64, 'hidden_size_2': 32, 'lr': 0.0001, 'weight_decay': 0.0001}
+config: {'_wandb': {}}
+2026-06-09 15:24:12,627 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():899] starting backend
+2026-06-09 15:24:12,829 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():914] sending inform_init request
+2026-06-09 15:24:13,173 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():919] backend started and connected
+2026-06-09 15:24:13,179 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_config_callback():1332] config_cb None None {'batch_size': 32, 'dropout': 0.4, 'epochs': 10, 'hidden_size_1': 64, 'hidden_size_2': 32, 'lr': 0.0001, 'weight_decay': 0.0001}
+2026-06-09 15:24:13,181 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_label_probe_notebook():1262] probe notebook
+2026-06-09 15:24:13,181 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():989] updated telemetry
+2026-06-09 15:24:13,184 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-06-09 15:24:13,646 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():1057] starting run threads in backend
+2026-06-09 15:24:13,760 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_console_start():2509] atexit reg
+2026-06-09 15:24:13,760 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-06-09 15:24:13,760 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-06-09 15:24:13,760 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-06-09 15:24:13,761 INFO    Thread-84 (_run_job):10636 [wandb_init.py:init():1095] run started, returning control to user process
+2026-06-09 15:24:15,289 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_finish():2271] finishing run jpalauserrano-conquer-blocks/Teleco-Customer-Churn/99fldt8x
+2026-06-09 15:24:15,289 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_atexit_cleanup():2476] got exitcode: 0
+2026-06-09 15:24:15,289 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_restore():2458] restore
+2026-06-09 15:24:15,289 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_restore():2464] restore done
+2026-06-09 15:24:16,773 INFO    Thread-84 (_run_job):10636 [wandb_run.py:_footer_sync_info():3877] logging synced files

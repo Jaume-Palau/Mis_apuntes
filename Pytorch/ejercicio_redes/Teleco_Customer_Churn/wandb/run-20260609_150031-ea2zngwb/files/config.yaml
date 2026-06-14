@@ -1,0 +1,54 @@
+_wandb:
+    value:
+        cli_version: 0.27.0
+        e:
+            c5fppexc0drve9c8wyj68jg5d4n3o3jf:
+                codePath: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/Teleco_Customer_Churn.ipynb
+                codePathLocal: Teleco_Customer_Churn.ipynb
+                email: jpalauserrano@gmail.com
+                executable: /home/jaume/miniconda3/envs/torch/bin/python
+                git:
+                    commit: c9372a9bad82ecb9ab08985afcefad1d470a27a1
+                    remote: git@github.com:Jaume-Palau/Mis_apuntes.git
+                host: ubuntujaume
+                os: Linux-6.8.0-124-generic-x86_64-with-glibc2.35
+                program: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn/Teleco_Customer_Churn.ipynb
+                python: CPython 3.11.14
+                root: /home/jaume/ConquerX/Mis_apuntes/Pytorch/ejercicio_redes/Teleco_Customer_Churn
+                startedAt: "2026-06-09T13:00:31.452448Z"
+                writerId: c5fppexc0drve9c8wyj68jg5d4n3o3jf
+        m: []
+        python_version: 3.11.14
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+                - 17
+            "4": 3.11.14
+            "5": 0.27.0
+            "8":
+                - 1
+            "12": 0.27.0
+            "13": linux-x86_64
+batch_size:
+    value: 32
+dropout:
+    value: 0.2
+epochs:
+    value: 20
+hidden_size_1:
+    value: 32
+hidden_size_2:
+    value: 16
+lr:
+    value: 0.0001
+weight_decay:
+    value: 0.001

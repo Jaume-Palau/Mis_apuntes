@@ -1,0 +1,1 @@
+{"val_f1":0.5875912408759124,"val_accuracy":0.7985739750445633,"val_loss":0.4184202208663478,"_timestamp":1.781005051250462e+09,"_wandb":{"runtime":3},"val_auc":0.844040404040404,"val_precision":0.6414342629482072,"_step":14,"train_loss":0.41959534268585424,"train_accuracy":0.8007133303611235,"model_path":"models/model_9kq7qjtt.pt","_runtime":3,"val_recall":0.5420875420875421}

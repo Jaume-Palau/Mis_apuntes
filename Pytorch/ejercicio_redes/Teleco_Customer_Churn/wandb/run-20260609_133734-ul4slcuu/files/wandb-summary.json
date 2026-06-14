@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":4},"val_f1":0.5897920604914935,"model_path":"models/model_ul4slcuu.pt","val_precision":0.6724137931034483,"_step":19,"train_accuracy":0.7917967008470798,"_timestamp":1.7810050597318094e+09,"val_accuracy":0.8065953654188949,"train_loss":0.4346465030739045,"val_recall":0.5252525252525253,"val_loss":0.41942434599905304,"_runtime":4,"val_auc":0.8429670441791652}

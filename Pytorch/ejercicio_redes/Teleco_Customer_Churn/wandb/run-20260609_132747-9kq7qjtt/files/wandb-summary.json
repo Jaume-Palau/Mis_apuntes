@@ -1,0 +1,1 @@
+{"val_recall":0.5387205387205387,"val_auc":0.8413304764819917,"train_loss":0.41951258114497153,"_step":14,"val_precision":0.64,"val_f1":0.5850091407678246,"train_accuracy":0.8074008024966562,"_wandb":{"runtime":3},"_runtime":3,"val_accuracy":0.7976827094474154,"_timestamp":1.7810044721333869e+09,"val_loss":0.4214875460096009}
